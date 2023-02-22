@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple jsTree</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+        
+    </head>
+
+    <style>
+        /* Pen-specific styles */
+
+        .left-half {
+        position: absolute;
+        left: 0px;
+        width: 30%;
+        }
+
+        .right-half {
+        position: absolute;
+        right: 0px;
+        width: 70%;
+        }
+    </style>
+    <body>
+
+
+    <section class="container">
+    <div class="left-half">
+        
+        <div>
+            <!--Drop down box-->    
+            <select id="country">
+                <option value="1">Canada</option>
+                <option value="2">Germany</option>
+                <option value="3">Sweden</option>
+                <option value="4">Turkey</option>
+                <option value="5">Peru</option>
+                <option value="6">Mexico</option>
+            </select>   
+        </div>
+
+        <div>  
+            <p></p>
+            <!--Tlacitko-->
+            <button id="btn1">Vrat SQL</button>
+        </div>      
+
+    <p></p>
+
+    <div id="SimpleJSTree"></div>
+    <div id="tree"></div>
+    <div id="jstree"></div>
+    <div id="test"></div>
+
+    </div>
+    <div class="right-half">
+        <article>
+            <h3>MySQL script</h3>
+            <textarea id="textarea" name="textarea" rows="100" cols="300"></textarea>
+        </article>
+    </div>
+    </section>
+
+    <script src="scripts.js"></script>
+
+    </body>
+</html>
+
+
